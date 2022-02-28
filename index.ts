@@ -1,5 +1,6 @@
 import { mul } from "./lib/math";
 import fs from 'fs';
+import testTypes from "./lib/types";
 
 console.log("Starting HelloWorld!");
 
@@ -34,3 +35,6 @@ console.log("\n---------\n");
 
 let res = fs.readFileSync("./package.json");
 console.log("res: ", res.toString().length);
+
+console.log("\n----------\n");
+testTypes();
