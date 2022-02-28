@@ -1,0 +1,15 @@
+{
+  "name": "ts_helloworld",
+  "version": "0.0.1",
+  "description": "helloworld",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npx ts-node index.ts",
+    "test": "npm test --reporter spec"
+  },
+  "author": "belukov@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.5.0"
+  }
+}
