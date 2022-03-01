@@ -27,23 +27,9 @@ interface IMaybeColoredPoint extends IPoint {
 }
 
 export function printTPoint (p: TColoredPoint) {
-  console.log(`TPoint: ${p.p.x}, ${p.p.y}, ${p.color}`);
+  return `TPoint: ${p.p.x}, ${p.p.y}, ${p.color}`;
 }
 
 export function printIPoint (p: IColoredPoint | IMaybeColoredPoint) {
-  console.log(`IPoint: ${p.x}, ${p.y}, ${p?.color || "_none_"}`);
-}
-
-
-export default function testTypes() {
-  const myPoint = {
-    x: 1,
-    y: 2,
-  }
-
-  const color = "red";
-  
-  printTPoint({p: myPoint, color});
-  printIPoint({...myPoint, color});
-  printIPoint(myPoint);
+  return `IPoint: ${p.x}, ${p.y}, ${p?.color || "_none_"}`;
 }
